@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.yumeinaruu.alllinks.exception.custom.NoSuchDataInDbException;
 import org.yumeinaruu.alllinks.model.Link;
-import org.yumeinaruu.alllinks.model.User;
 import org.yumeinaruu.alllinks.model.dto.LinkCreateDto;
 import org.yumeinaruu.alllinks.model.dto.LinkUpdateDto;
 import org.yumeinaruu.alllinks.repository.LinkRepository;
