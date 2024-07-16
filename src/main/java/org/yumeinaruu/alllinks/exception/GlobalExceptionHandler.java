@@ -38,10 +38,4 @@ public class GlobalExceptionHandler {
         log.error("Error occurred: " + ex);
         return new ResponseEntity<>(HttpStatus.CONFLICT);
     }
-
-    @ExceptionHandler(HttpClientErrorException.Forbidden.class)
-    public ResponseEntity<HttpStatus> handleHttpClientErrorException(HttpClientErrorException ex) {
-        log.warn("Forbidden: " + ex);
-        return new ResponseEntity<>(HttpStatus.FORBIDDEN);
-    }
 }
